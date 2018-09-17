@@ -1,17 +1,5 @@
 window.onload=function () {
-    let shopping=document.querySelectorAll(".shop");
-    let bag=document.querySelector(".bag");
-    console.log(shopping,bag);
-    for (let i=0;i<shopping.length;i++) {
-        shopping[i].onclick=function () {
-            let status=getComputedStyle(bag,null).display;
-            if (status=="none") {
-                bag.style.display="block";
-            }else if(status=="block"){
-                bag.style.display="none"
-            }
-        }
-    }
+   
 
     window.onscroll=function () {
         let navs=document.querySelectorAll("nav");
